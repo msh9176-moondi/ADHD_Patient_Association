@@ -49,89 +49,95 @@
 
   <!-- 콘텐츠 -->
   <section class="section section-light">
-    <div class="container content">
-      <div class="card-grid">
-        <div>
+    <div class="container">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <!-- 준회원 가입 안내 -->
+        <div class="card" style="margin-bottom: var(--spacing-xl);">
           <h2>준회원 가입 안내</h2>
           <p>
             한국ADHD환우회에 준회원으로 가입하시면 환우회 활동 안내를 받고,
             행사·모임·의견수렴 절차에 참여하실 수 있습니다.
           </p>
 
-          <h3>준회원 혜택</h3>
-          <ul>
-            <li>환우회 활동, 행사, 모임 안내</li>
-            <li>의견수렴 절차 참여</li>
-            <li>자료 및 정보 공유</li>
-            <li>환우 간 교류 기회</li>
-          </ul>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-lg);">
+            <div>
+              <h3>준회원 혜택</h3>
+              <ul>
+                <li>환우회 활동, 행사, 모임 안내</li>
+                <li>의견수렴 절차 참여</li>
+                <li>자료 및 정보 공유</li>
+                <li>환우 간 교류 기회</li>
+              </ul>
+            </div>
+            <div>
+              <h3>정회원 전환</h3>
+              <p>
+                정관에 따라 준회원은 정기총회 또는 임시총회에 출석한 경우
+                해당 총회 종료 다음 날부터 정회원으로 전환될 수 있습니다.
+                정회원은 총회 의결권, 임원 선거권 및 피선거권을 가집니다.
+              </p>
+            </div>
+          </div>
 
-          <h3>정회원 전환</h3>
-          <p>
-            정관에 따라 준회원은 정기총회 또는 임시총회에 출석한 경우
-            해당 총회 종료 다음 날부터 정회원으로 전환될 수 있습니다.
-            정회원은 총회 의결권, 임원 선거권 및 피선거권을 가집니다.
-          </p>
-
-          <div class="alert alert-success">
+          <div class="alert alert-success" style="margin-top: var(--spacing-lg);">
             <strong>약 2분 소요</strong><br>
             등록명(닉네임)과 이메일만 입력하시면 됩니다. 실명은 필요하지 않습니다.
           </div>
         </div>
 
-        <div>
-          <div class="privacy-box" style="background-color: var(--gray-100); color: var(--gray-800);">
-            <h3 style="color: var(--gray-900);">개인정보 처리 안내</h3>
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-              <div class="privacy-item">
-                <div class="icon" style="background-color: var(--primary);">✓</div>
-                <div>
-                  <strong>수집 항목</strong>
-                  <p style="color: var(--gray-600);">등록명/닉네임, 이메일 주소, 만 14세 이상 여부</p>
-                </div>
+        <!-- 개인정보 처리 안내 -->
+        <div class="card" style="margin-bottom: var(--spacing-xl);">
+          <h3>개인정보 처리 안내</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-md); margin-top: var(--spacing-md);">
+            <div class="privacy-item">
+              <div class="icon" style="background-color: var(--primary);">✓</div>
+              <div>
+                <strong>수집 항목</strong>
+                <p style="color: var(--gray-600); margin: 0;">등록명/닉네임, 이메일 주소, 만 14세 이상 여부</p>
               </div>
-              <div class="privacy-item">
-                <div class="icon" style="background-color: var(--primary);">✓</div>
-                <div>
-                  <strong>선택 수집항목</strong>
-                  <p style="color: var(--gray-600);">관심 활동, 남기고 싶은 말 (작성하지 않아도 불이익 없음)</p>
-                </div>
+            </div>
+            <div class="privacy-item">
+              <div class="icon" style="background-color: var(--primary);">✓</div>
+              <div>
+                <strong>선택 수집항목</strong>
+                <p style="color: var(--gray-600); margin: 0;">관심 활동, 남기고 싶은 말 (작성하지 않아도 불이익 없음)</p>
               </div>
-              <div class="privacy-item">
-                <div class="icon" style="background-color: var(--primary);">✓</div>
-                <div>
-                  <strong>이용 목적</strong>
-                  <p style="color: var(--gray-600);">회원가입 확인, 회원 관리, 활동·총회·의견수렴 안내</p>
-                </div>
+            </div>
+            <div class="privacy-item">
+              <div class="icon" style="background-color: var(--primary);">✓</div>
+              <div>
+                <strong>이용 목적</strong>
+                <p style="color: var(--gray-600); margin: 0;">회원가입 확인, 회원 관리, 활동·총회·의견수렴 안내</p>
               </div>
-              <div class="privacy-item">
-                <div class="icon" style="background-color: var(--primary);">✓</div>
-                <div>
-                  <strong>보유 기간</strong>
-                  <p style="color: var(--gray-600);">회원 탈퇴 시까지</p>
-                </div>
+            </div>
+            <div class="privacy-item">
+              <div class="icon" style="background-color: var(--primary);">✓</div>
+              <div>
+                <strong>보유 기간</strong>
+                <p style="color: var(--gray-600); margin: 0;">회원 탈퇴 시까지</p>
               </div>
-              <div class="privacy-item">
-                <div class="icon" style="background-color: var(--error);">!</div>
-                <div>
-                  <strong>민감정보 미수집</strong>
-                  <p style="color: var(--gray-600);">ADHD 진단 여부, 복용약, 진료기록 등 건강에 관한 민감정보는 수집하지 않습니다.</p>
-                </div>
+            </div>
+            <div class="privacy-item" style="grid-column: 1 / -1;">
+              <div class="icon" style="background-color: var(--error);">!</div>
+              <div>
+                <strong>민감정보 미수집</strong>
+                <p style="color: var(--gray-600); margin: 0;">ADHD 진단 여부, 복용약, 진료기록 등 건강에 관한 민감정보는 수집하지 않습니다.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="text-center mt-2">
-        <h3>가입 신청하기</h3>
-        <p>아래 버튼을 클릭하여 구글 폼으로 이동합니다.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSemBXxIc9DuVW2dgHg3oEabuseKBTrd0ARBJGuQJ-g8YVlStA/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-          회원가입 신청하기
-        </a>
-        <p class="text-muted mt-1" style="font-size: 0.875rem;">
-          * 구글 계정 로그인이 필요할 수 있습니다.
-        </p>
+        <!-- 가입 신청 버튼 -->
+        <div class="text-center">
+          <h3>가입 신청하기</h3>
+          <p>아래 버튼을 클릭하여 구글 폼으로 이동합니다.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSemBXxIc9DuVW2dgHg3oEabuseKBTrd0ARBJGuQJ-g8YVlStA/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            회원가입 신청하기
+          </a>
+          <p class="text-muted mt-1" style="font-size: 0.875rem;">
+            * 구글 계정 로그인이 필요할 수 있습니다.
+          </p>
+        </div>
       </div>
     </div>
   </section>
